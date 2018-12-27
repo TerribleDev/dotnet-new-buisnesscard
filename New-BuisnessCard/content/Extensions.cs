@@ -1,4 +1,5 @@
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace content
 {
@@ -10,5 +11,6 @@ namespace content
                         .AppendJoin(s, new string[n+1])
                         .ToString();
         }
+
     }
 }

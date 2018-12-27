@@ -5,4 +5,8 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="crayon" Version="0.0.11" />
+  </ItemGroup>
+
 </Project>

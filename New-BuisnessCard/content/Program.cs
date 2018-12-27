@@ -1,12 +1,13 @@
 ﻿using System;
-
+using System.Linq;
 namespace content
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.Write(BoxDraw.Draw("Tommy James Parnell" + Environment.NewLine + "Twitter: https://twitter.com/terribledev" ));
+            var stringToDraw = String.Join(Environment.NewLine, BuisnessCard.Data.Where(a => !String.IsNullOrWhiteSpace(a.When)).Select(a => a.ToString()));
+            Console.Write(BoxDraw.Draw(stringToDraw));
         }
     }
 }
